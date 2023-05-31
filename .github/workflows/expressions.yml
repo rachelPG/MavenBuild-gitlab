@@ -4,10 +4,7 @@ env:
   appName: CounterApp
 jobs:
   build_job:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Execute command
         run: echo "Build automation for application cualquiera"
-      - name: Executing Build Step
-        id: exec
-        run: exit 1
