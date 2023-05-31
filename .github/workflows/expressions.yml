@@ -7,7 +7,7 @@ jobs:
     runs-on: windows-latest
     steps:
       - name: Execute command
-        run: echo "Build automation for application: ${{ env.appName }}"
+        run: echo "Build automation for application cualquiera"
       - name: executing build step
         id: exec
         run: exti1
