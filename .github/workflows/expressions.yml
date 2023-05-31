@@ -10,4 +10,3 @@ jobs:
         run: echo "Build automation for application:${{ env.appName }}"
       - name: Executing build step
         id: exec
-        run: exit 1
