@@ -8,3 +8,6 @@ jobs:
     steps:
       - name: Execute command
         run: echo "Build automation for application cualquiera"
+      - name: Executing Build Step
+        id: exec
+        run: exit 1
