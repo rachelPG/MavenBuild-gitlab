@@ -7,4 +7,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Execute command
-        run: echo "Build automation for application cualquiera"
+        run: echo "Build automation for application ${{env.appName}}"
