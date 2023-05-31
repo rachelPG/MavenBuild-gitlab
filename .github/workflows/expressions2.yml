@@ -17,3 +17,7 @@ jobs:
           restore-keys: ""          
       - name: Execute Command
         run: echo "Build Automation for Application: CounterApp"
+      - name: Check if previous steps is success or failure
+        run: echo "Running on failure"
+        if: ${{ failure() && steps.exec.conclusion == 'failure' }}
+
