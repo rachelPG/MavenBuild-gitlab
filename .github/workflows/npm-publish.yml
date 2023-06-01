@@ -1,4 +1,4 @@
-name: Java CI with Maven3
+name: 3Java CI with Maven3
 on:
   push:
   concurrency:
