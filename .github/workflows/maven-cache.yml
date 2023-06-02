@@ -1,4 +1,4 @@
-name: Docker image Build Process
+name: Docker2 image Build Process
 on:
   workflow_dispatch:
   workflow_call:
