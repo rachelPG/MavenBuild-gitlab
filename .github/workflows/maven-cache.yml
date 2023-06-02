@@ -1,0 +1,12 @@
+name: Docker image Build Process
+on:
+  workflow_dispatch:
+  workflow_call:
+jobs:
+  env:
+  appName: "spring-boot-image"
+  runs-on: ubuntu-latest
+  steps:
+  - name: Checkout
+  uses: actions/checkout@v3
+        
