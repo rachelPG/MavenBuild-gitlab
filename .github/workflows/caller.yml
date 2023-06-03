@@ -1,7 +1,11 @@
 name: Reusable Workflow Caller
 
-on:
+on: 
   push:
+  workflow_call:
+    secrets:
+      envPAT:
+        required: true 
 
 jobs:
   Reusable-caller-job:
