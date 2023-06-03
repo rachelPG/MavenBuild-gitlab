@@ -1,0 +1,17 @@
+name: Docker image Build Process
+on:
+  workflow_dispatch:
+  workflow_call:
+    secrets:
+      access-token:
+        description: 'A token passed from the caller workflow'
+        required: false
+  #push:
+jobs:
+  docker:
+    env:
+      appName: "spring-boot-image"
+    runs-on: ubuntu-latest
+    steps:
+      - name: get username
+      run: echo "${{ secrets.DOCKERHUB_TOKEN }}"
