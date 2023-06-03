@@ -2,9 +2,6 @@ name: Reusable Workflow Caller
 
 on:
   push:
-  status:
-      envPAT:
-        required: true
 
 jobs:
   Reusable-caller-job:
