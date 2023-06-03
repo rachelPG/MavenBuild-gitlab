@@ -6,7 +6,7 @@ on:
 jobs:
   docker:
     env:
-      name: "spring-boot-image"
+      appName: "spring-boot-image"
       runs-on: ubuntu-latest
       steps:
         - name: Checkout
@@ -34,6 +34,6 @@ jobs:
           with:
             context: .
             push: true
-            tags: ${{ secrets.DOCKERHUB_USERNAM }}/${{ env.name }}:latest
+            tags: ${{ secrets.DOCKERHUB_USERNAM }}/${{ env.appName }}:latest
  
         
