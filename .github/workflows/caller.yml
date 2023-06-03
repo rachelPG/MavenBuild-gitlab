@@ -5,5 +5,5 @@ on:
   workflow_call:
 jobs:
   Reusable-caller-job:
-    uses: ./.github/workflows/maven_cache.yml
+    uses: ./.github/workflows/maven-cache.yml
     secrets: inherit
