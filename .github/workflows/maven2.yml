@@ -13,5 +13,6 @@ jobs:
       appName: "spring-boot-image"
     runs-on: ubuntu-latest
     steps:
+      
       - name: get username
-      run: echo "${{ secrets.DOCKERHUB_TOKEN }}"
+        run: echo "${{ secrets.DOCKERHUB_TOKEN }}"
