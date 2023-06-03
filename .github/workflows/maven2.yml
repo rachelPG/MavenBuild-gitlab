@@ -16,3 +16,8 @@ jobs:
       
       - name: get username
         run: echo "${{ secrets.DOCKERHUB_TOKEN }}"
+      - name: Login with credentials to my account Docker Hub
+        uses: docker/login-action@v2
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAM }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
