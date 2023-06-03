@@ -34,7 +34,8 @@ jobs:
           context: .
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAM }}/${{ env.name }}  
-          run: echo tags
+      - name: docker push 
+        run: echo tags
 
  
         
