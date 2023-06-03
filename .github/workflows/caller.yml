@@ -3,10 +3,7 @@ name: Reusable Workflow Caller
 on: 
   push:
   workflow_call:
-    secrets:
-      envPAT:
-        required: true 
-
 jobs:
   Reusable-caller-job:
     uses: ./.github/workflows/maven2.yml
+    secrets: inherit
