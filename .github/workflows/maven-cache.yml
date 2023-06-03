@@ -5,7 +5,7 @@ on:
   push:
 jobs:
   env:
-  appName: "spring-boot-image"
+    appName: "spring-boot-image"
   runs-on: ubuntu-latest
   steps:
     - name: Checkout
